@@ -17,6 +17,7 @@
     <div>
       <button @click="increase" class="text-my-rose text-lg mr-5">+</button>
       <button @click="decrease" class="text-my-rose text-lg">-</button>
+      <div>Change somethingnnnnnnnnn in HomeView compoennt!!!!!</div>
     </div>
   </main>
 </template>
