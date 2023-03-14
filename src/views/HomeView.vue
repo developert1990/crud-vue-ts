@@ -9,7 +9,7 @@
         height="6 0"
       />
       <h1 class="text-rose-200 text-3xl mb-2">This is Home View {{ $t('appTitle') }}</h1>
-      <div>Updated text in HomeView component</div>
+      <div><h3>Updated text in HomeView component</h3></div>
     </div>
     <div class="text-white">
       <strong>Count: </strong> <span class="font-bold">{{ count }}</span>
@@ -17,7 +17,7 @@
     <div>
       <button @click="increase" class="text-my-rose text-lg mr-5">+</button>
       <button @click="decrease" class="text-my-rose text-lg">-</button>
-      <div>Change somethingnnnnnnnnn in HomeView compoennt!!!!!</div>
+      <div>Change somethingnnnnnnnnn in HomeView compoennt!!!!! <strong>Hello...</strong> </div>
     </div>
   </main>
 </template>

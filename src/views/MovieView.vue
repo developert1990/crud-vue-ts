@@ -12,13 +12,15 @@
       />
       This is movie view page
     </div>
-    <div>This is view componentn~~~!!!!! first branch work</div>
+    <div>
+      <h1>Hello`~!!!`</h1>
+    </div>
     <div>
       <BaseMovieFilter />
       <BaseMovieTable />
       <BasePagination />
     </div>
-    <div>change something on second branch ~~~~Movieview</div>
+    <div>change something on second branch ~~~~Movieview What???</div>
   </main>
 </template>
 <script lang="ts">
