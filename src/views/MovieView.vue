@@ -12,6 +12,7 @@
       />
       This is movie view page
     </div>
+    <div>This is view componentn~~~!!!!! first branch work</div>
     <div>
       <BaseMovieFilter />
       <BaseMovieTable />
