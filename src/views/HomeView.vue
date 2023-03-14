@@ -9,7 +9,6 @@
         height="6 0"
       />
       <h1 class="text-rose-200 text-3xl mb-2">This is Home View {{ $t('appTitle') }}</h1>
-      <div><h5>Changed... on same file and line</h5></div>
     </div>
     <div class="text-white">
       <strong>Count: </strong> <span class="font-bold">{{ count }}</span>
@@ -17,7 +16,6 @@
     <div>
       <button @click="increase" class="text-my-rose text-lg mr-5">+</button>
       <button @click="decrease" class="text-my-rose text-lg">-</button>
-      <div>Change somethingnnnnnnnnn in HomeView compoennt!!!!!~~~~</div>
     </div>
   </main>
 </template>
