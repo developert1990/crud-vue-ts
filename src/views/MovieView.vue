@@ -1,6 +1,8 @@
 <template>
-  <div class="movie">
-    <div class="text-3xl font-bold text-my-rose">
+  <main class="flex flex-col justify-center items-center">
+    <div
+      class="text-3xl font-bold text-my-rose flex justify-center items-end my-10"
+    >
       <img
         alt="Pinia logo"
         class="logo mr-5"
@@ -8,14 +10,14 @@
         width="60"
         height="6 0"
       />
-      This is an movie view page
+      This is movie view page
     </div>
     <div>
       <BaseMovieFilter />
       <BaseMovieTable />
       <BasePagination />
     </div>
-  </div>
+  </main>
 </template>
 <script lang="ts">
 import { useMovieStore } from "@/stores/movieStore";

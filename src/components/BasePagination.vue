@@ -1,35 +1,37 @@
 <template>
-  <ul id="pagination">
-    <li class="pagination-item">
-      <button type="button" @click="onClickFirstPage" :disabled="isInFirstPage">
-        First
-      </button>
-    </li>
+  <div id="pagination">
+    <ul>
+      <li class="pagination-item">
+        <button class="btn" @click="onClickFirstPage" :disabled="isInFirstPage">
+          First
+        </button>
+      </li>
 
-    <li class="pagination-item">
-      <button
-        type="button"
-        @click="onClickPreviousPage"
-        :disabled="isInFirstPage"
-      >
-        Previous
-      </button>
-    </li>
-    <div class="page-status">
-      {{ `${currentPage} / ${totalPages}` }}
-    </div>
-    <li class="pagination-item">
-      <button type="button" @click="onClickNextPage" :disabled="isInLastPage">
-        Next
-      </button>
-    </li>
+      <li class="pagination-item">
+        <button
+          class="btn"
+          @click="onClickPreviousPage"
+          :disabled="isInFirstPage"
+        >
+          Previous
+        </button>
+      </li>
+      <div class="text-white">
+        {{ `${currentPage} / ${totalPages}` }}
+      </div>
+      <li class="pagination-item">
+        <button class="btn" @click="onClickNextPage" :disabled="isInLastPage">
+          Next
+        </button>
+      </li>
 
-    <li class="pagination-item">
-      <button type="button" @click="onClickLastPage" :disabled="isInLastPage">
-        Last
-      </button>
-    </li>
-  </ul>
+      <li class="pagination-item">
+        <button class="btn" @click="onClickLastPage" :disabled="isInLastPage">
+          Last
+        </button>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script lang="ts">
@@ -79,6 +81,22 @@ export default defineComponent({
 </script>
 <style>
 #pagination {
+  @apply w-96 my-0 mx-auto mt-5;
+}
+
+#pagination ul {
+  @apply flex justify-evenly;
+}
+
+.btn {
+  @apply py-1 px-3 rounded text-white cursor-pointer hover:text-piniaSub hover:bg-white bg-piniaSub transition-all duration-300 ease-in-out;
+}
+
+.btn:disabled {
+  @apply bg-transparent;
+}
+
+/* #pagination {
   list-style-type: none;
   padding: 30px;
   display: flex;
@@ -123,5 +141,5 @@ export default defineComponent({
   background-color: rgb(90, 58, 14);
   cursor: default;
   color: var(--subColor);
-}
+} */
 </style>

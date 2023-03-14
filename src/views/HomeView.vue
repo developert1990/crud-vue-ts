@@ -8,7 +8,7 @@
         width="60"
         height="6 0"
       />
-      <h1 class="text-rose-200 text-3xl mb-2">This is Home View</h1>
+      <h1 class="text-rose-200 text-3xl mb-2">This is Home View {{ $t('appTitle') }}</h1>
     </div>
     <div class="text-white">
       <strong>Count: </strong> <span class="font-bold">{{ count }}</span>

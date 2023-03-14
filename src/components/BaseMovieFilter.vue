@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-5">
     <input
       type="text"
       placeholder="Search by title.."
@@ -20,16 +20,15 @@ export default defineComponent({
     return { orderBy, offset, searchByTitle, searchMovies };
   },
   methods: {
-    debounceSearch:
-      _.debounce(async(self) =>  {
-        self.$emit("setdefaultpage");
-        await self.searchMovies(self.searchByTitle, self.orderBy, self.offset);
-      }, 300)
+    debounceSearch: _.debounce(async (self) => {
+      self.$emit("setdefaultpage");
+      await self.searchMovies(self.searchByTitle, self.orderBy, self.offset);
+    }, 300),
   },
   watch: {
-    searchByTitle(){
+    searchByTitle() {
       this.debounceSearch(this);
-    }
+    },
   },
 });
 </script>

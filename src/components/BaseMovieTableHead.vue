@@ -11,7 +11,7 @@ export default defineComponent({
   name: "BaseMovieTableHead",
   props: {
     heading: {
-      type: [] as PropType<string[]>,
+      type: Array as PropType<string[]>,
       required: true,
     },
   },

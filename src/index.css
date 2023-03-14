@@ -4,7 +4,8 @@
 
 @layer base {
   body {
-    background: #181818;
+    /* background: #181818; */
+
     height: 100vh;
     /* overflow-y: hidden; */
   }

@@ -11,13 +11,16 @@ import BaseMovieFilter from "@/components/BaseMovieFilter.vue";
 import "./index.css";
 
 import BaseNavigation from "./components/BaseNavigation.vue";
+import AccessErrorBoundary from "./components/AccessErrorBoundary.vue";
+import { i18n } from "./utils/i18n/i18n";
 
 const app = createApp(App);
 const pinia = createPinia();
 
-app.use(pinia).use(router);
+app.use(pinia).use(router).use(i18n);
 
 app
+  .component("access-error-boundary", AccessErrorBoundary)
   .component("base-navigation", BaseNavigation)
   .component("movie-view", MovieView)
   .component("base-movie-table", BaseMovieTableVue)

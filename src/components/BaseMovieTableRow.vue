@@ -8,19 +8,18 @@
   </template>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
-import { PropType } from "vue";
+import { defineComponent, PropType } from "vue";
 import { MovieEntity } from "@/models/movie-entity";
 
 export default defineComponent({
   name: "BaseMovieTableRow",
   props: {
     rowData: {
-      type: [] as PropType<MovieEntity[]>,
+      type: Array as PropType<MovieEntity[]>,
       required: true,
     },
     field: {
-      type: [] as PropType<string[]>,
+      type: Array as PropType<string[]>,
       required: true,
     },
   },
