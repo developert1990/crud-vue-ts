@@ -13,7 +13,8 @@
       This is movie view page
     </div>
     <div>
-      <h1>Hello`~!!!`</h1>
+      <h6>Let's see....</h6>
+      <h3>Conflict~?~??~</h3>
     </div>
     <div>
       <BaseMovieFilter />
@@ -21,6 +22,7 @@
       <BasePagination />
     </div>
     <div>change something on second branch ~~~~Movieview What???</div>
+    <h3>This is last change on s-b</h3>
   </main>
 </template>
 <script lang="ts">
